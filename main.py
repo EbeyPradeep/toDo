@@ -3,6 +3,7 @@ from bs4 import BeautifulSoup
 
 
 def add_numbers(a, b):
+    x = requests.get('https://w3schools.com')
     return {"result": a + b}
 
 
