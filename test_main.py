@@ -4,7 +4,7 @@ from main import add_numbers
 
 
 class Test:
-    test_cases = [(1, 3, 4), (3, 4, 7), (2, 5, 7), (3, 4, 7), (4, 4, 8)]
+    test_cases = [(1, 3, 4), (3, 4, 7), (3, 5, 7)]
 
     @pytest.mark.parametrize("a,b, expected_result", test_cases)
     def test_add_numbers(self, a, b, expected_result):
