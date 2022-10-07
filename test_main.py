@@ -1,14 +1,11 @@
 import pytest
 
-from main import *
+from main import add_numbers
 
 
 class Test:
-    fame = [('1', 1), ('2', 2), ('3', 3)]
+    test_cases = [(1, 3, 4), (3, 4, 7), (2, 5, 7)]
 
-    @pytest.mark.parametrize("test,test2", fame)
-    def test_important_awsome(self, test, test2):
-        assert [important_awsome(test), 'hello'] == [test2, 'hello']
-
-    def test_important_cool(self):
-        assert True
+    @pytest.mark.parametrize("a,b, expected_result", test_cases)
+    def test_add_numbers(self, a, b, expected_result):
+        assert add_numbers(a, b) == {"result": expected_result}
