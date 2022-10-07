@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 
 
 def add_numbers(a, b):
-    return {"result": a + b}
+    return {"result": a - b}
 
 
 if __name__ == '__main__':
